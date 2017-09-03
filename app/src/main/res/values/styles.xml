@@ -7,6 +7,9 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="actionBarStyle">@style/DefaultBarStyle</item>
+        <item name="android:colorButtonNormal">@drawable/button_selector</item>
+        <item name="colorButtonNormal">@drawable/button_selector</item>
+        <item name="android:buttonStyle">@style/DefaultButtonStyle</item>
     </style>
 
     <!-- Default bar style. -->
@@ -15,4 +18,9 @@
         <item name="elevation">0dp</item>
     </style>
 
+    <!-- Default button style. -->
+    <style name="DefaultButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorTitle</item>
+
+    </style>
 </resources>

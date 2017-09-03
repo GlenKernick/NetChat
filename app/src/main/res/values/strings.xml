@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Net Chat</string>
 
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="button_send">Send</string>
+
 </resources>
