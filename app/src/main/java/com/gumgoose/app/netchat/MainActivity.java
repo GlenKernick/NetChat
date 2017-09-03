@@ -16,7 +16,6 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
@@ -177,10 +176,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RC_SIGN_IN) {
-            if (resultCode == RESULT_OK) {
-                /* Sign in successful */
-                Toast.makeText(this, R.string.toast_signed_in, Toast.LENGTH_SHORT).show();
-            } else if (resultCode == RESULT_CANCELED) {
+            if (resultCode == RESULT_CANCELED) {
                 /* Sign in canceled */
                 finish();
             }
